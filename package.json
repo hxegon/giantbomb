@@ -5,7 +5,7 @@
   "author": "Cooper LeBrun <cooperlebrun@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "shadow-cljs -A:frontend:fe-dev watch app",
+    "dev": "shadow-cljs -A:frontend:fe-dev:cider watch app",
     "release": "shadow-cljs release app"
   },
   "devDependencies": {
