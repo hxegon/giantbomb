@@ -1,0 +1,19 @@
+{
+  "name": "gravie",
+  "version": "0.0.1",
+  "description": "Interview project for gravie",
+  "author": "Cooper LeBrun <cooperlebrun@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "shadow-cljs -A:frontend:fe-dev watch app",
+    "release": "shadow-cljs release app"
+  },
+  "devDependencies": {
+    "shadow-cljs": "^2.25.10",
+    "eslint": "^8.52.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-refresh": "^0.14.0"
+  }
+}

@@ -1,0 +1,8 @@
+{:deps true
+ :dev-http {3000 "public"}
+ :builds
+ {:app
+  {:target   :browser
+   :modules  {:main {:entries [frontend.core]
+                     :init-fn frontend.core/init}}
+   :devtools {:preloads [preload devtools.preload]}}}}

@@ -1,0 +1,10 @@
+{:paths   ["src"]
+ :deps    {org.clojure/clojure       {:mvn/version "1.11.1"}
+           org.clojure/clojurescript {:mvn/version "1.11.60"}
+           com.pitch/uix.core        {:mvn/version "1.0.1"}
+           com.pitch/uix.dom         {:mvn/version "1.0.1"}}
+ :aliases {:frontend
+           {:extra-deps {thheller/shadow-cljs {:mvn/version "2.25.8"}}}
+           :fe-dev {:extra-paths ["dev"]
+                    :extra-deps  {binaryage/devtools {:mvn/version "1.0.7"}
+                                  cider/cider-nrepl  {:mvn/version "0.41.0"}}}}}
