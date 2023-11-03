@@ -20,4 +20,5 @@ node_modules/
 /public/main.css
 .idea
 *.iml
-/resources/public/assets/js
+/resources/public/assets/js/*
+/resources/public/assets/css/*
