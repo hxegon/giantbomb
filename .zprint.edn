@@ -1,5 +1,6 @@
-{:fn-map {"->>" :gt3-force-nl
-          "->"  :gt3-force-nl}
+{:fn-map {"->>"        :gt3-force-nl
+          "->"         :gt3-force-nl
+          "uix.core/$" :gt2-force-nl}
  ;; Only force \n on ->, ->> args if there are more than 3
  :map    {:nl-separator? false
           :comma?        false
