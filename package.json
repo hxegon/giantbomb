@@ -5,15 +5,18 @@
   "author": "Cooper LeBrun <cooperlebrun@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "shadow-cljs -A:frontend:fe-dev:cider watch app",
+    "css-dev": "tailwindcss -i ./resources/global.css -o ./resources/public/assets/css/output.css --watch",
+    "shadow-dev": "shadow-cljs -A:frontend:fe-dev:cider watch app",
     "release": "shadow-cljs release app"
   },
   "devDependencies": {
-    "shadow-cljs": "^2.25.10",
     "eslint": "^8.52.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-refresh": "^0.14.0"
-  }
+    "react-refresh": "^0.14.0",
+    "shadow-cljs": "^2.25.10",
+    "tailwindcss": "^3.3.5"
+  },
+  "dependencies": {}
 }

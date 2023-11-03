@@ -4,7 +4,11 @@
 
 (defui app
  []
- ($ :h1 "Gravie app init"))
+ ($ :div.font-bold
+   ($ :label
+      "Label"
+      ($ :input {:type :text})
+      ($ :button {:type :submit} "submit"))))
 
 (defonce root
   (d/create-root (js/document.getElementById "root")))
