@@ -11,7 +11,8 @@
            com.pitch/uix.dom     {:mvn/version "1.0.1"}}
  :aliases {:frontend {:extra-deps
                       {thheller/shadow-cljs {:mvn/version "2.25.8"}}}
-           :cider    {:extra-deps {cider/cider-nrepl {:mvn/version "0.41.0"}}}
+           :cider    {:extra-deps {cider/cider-nrepl {:mvn/version "0.41.0"}}
+                      :main-opts ["-m" "nrepl.cmdline" "--middleware" "[cider.nrepl/cider-middleware]"]}
            :fe-dev   {:extra-paths ["dev"]
                       :extra-deps  {binaryage/devtools {:mvn/version "1.0.7"}}}
            :backend  {:main-opts ["-m" "backend.core"]}}}

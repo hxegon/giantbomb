@@ -5,8 +5,11 @@
 *Launch frontend*
 `> yarn dev`
 
-*Launch backend w/ cider*
-`> clj -M:backend -A:cider`
+*Launch backend*
+`> clj -M:backend`
+
+*Launch backend w/ cider middleware*
+`> clj -M:backend:cider`
 
 ## Where to go
 
