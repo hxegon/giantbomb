@@ -2,7 +2,7 @@
   (:require [clojure.data.json :as json]
             [clojure.string :as cs]
             [clj-http.client :as http]
-            [backend.api.utils :as u]))
+            [backend.utils :as u]))
 
 (def ^:private api-key
   ;; FIXME: read from env var instead

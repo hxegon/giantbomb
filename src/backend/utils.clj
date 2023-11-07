@@ -1,4 +1,4 @@
-(ns backend.api.utils
+(ns backend.utils
   (:require [clojure.string :as cs]
             [clojure.walk :as walk]))
 
@@ -50,7 +50,7 @@
 (defn- error-kw?
   [kw]
   (when
-    (keyword? kw)
+   (keyword? kw)
     (or (= :error kw) (= "error" (namespace kw)))))
 
 (comment
